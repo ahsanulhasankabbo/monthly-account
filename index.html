@@ -30,7 +30,7 @@
                 <h5>Income</h5>
                 <div class="d-flex income-section">
                     <p>Income : </p>
-                    <input class="bg-secondary bg-opacity-25 ms-3" type="text">
+                    <input id="income-input" class="bg-secondary bg-opacity-25 ms-3" type="text">
                 </div>
                 <h5>Expenses</h5>
                 <div class="d-flex ps-5">
@@ -40,24 +40,24 @@
                         <p>Clothes : </p>
                     </div>
                     <div class="input-field">
-                        <input class="bg-secondary bg-opacity-25 m-2" type="text">
-                        <input class="bg-secondary bg-opacity-25 m-2" type="text">
-                        <input class="bg-secondary bg-opacity-25 m-2" type="text">
+                        <input id="food-input" class="bg-secondary bg-opacity-25 m-2" type="text">
+                        <input id="rent-input" class="bg-secondary bg-opacity-25 m-2" type="text">
+                        <input id="clothes-input" class="bg-secondary bg-opacity-25 m-2" type="text">
                     </div>
                 </div>
                 <div class="my-2">
-                    <button class="btn bg-success text-white text-bold px-5">Calculate</button>
+                    <button id="calculate-button" class="btn bg-success text-white text-bold px-5">Calculate</button>
                 </div>
-                <h5 class="my-2">Total Expense : 5500</h5>
-                <h5 class="my-2">Balance : 4500</h5>
+                <h5 class="my-2">Total Expense : <span id="total-cost">0</span></h5>
+                <h5 class="my-2">Balance : <span id="total-balance">0</span></h5>
                 <div class="d-flex save-section">
                     <p>save: </p>
-                    <input class="save-input text-center ms-2 bg-secondary bg-opacity-25 h-100" type="text">
+                    <input id="save-input" class="save-input text-center ms-2 bg-secondary bg-opacity-25 h-100" type="text">
                     <p class="px-3 mx-1 bg-secondary bg-opacity-25 h-100">%</p>
-                    <button class="btn bg-success text-white text-bold px-4 h-100 py-0">Save</button>
+                    <button id="save-button" class="btn bg-success text-white text-bold px-4 h-100 py-0">Save</button>
                 </div>
-                <h5 class="my-2">Saving Amount : 5500</h5>
-                <h5 class="mb-2">Remaining Balance : 5500</h5>
+                <h5 class="my-2">Saving Amount : <span id="save-amount">0</span></h5>
+                <h5 class="mb-2">Remaining Balance : <span id="remaining-balance">0</span></h5>
             </div>
         </section>
     </main>

@@ -5,6 +5,7 @@ input{
     height: 30px;
     width: 140px;
     border: none;
+    padding-left: 10px;
 }
 .save-input{
     width: 100px;
