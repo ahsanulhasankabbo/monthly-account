@@ -12,9 +12,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Monthly Account</h1>
+    <!-- header section  -->
+    <header class="container my-5">
+        <h1 class="text-center text-success">Monthly Account</h1>
     </header>
+
+    <!-- main section  -->
+    <main class="container my-5 row mx-auto">
+        <!-- image section  -->
+        <section  class="col-lg-8 col-12">
+            <div>
+                <img class="w-100" src="images/calculation.jpg" alt="">
+            </div>
+        </section>
+        <section class="col-lg-4 col-12 bg-light px-5 py-2">
+            <div class="text-center">
+                <h5>Income</h5>
+                <div class="d-flex income-section">
+                    <p>Income : </p>
+                    <input class="bg-secondary bg-opacity-25 ms-3" type="text">
+                </div>
+                <h5>Expenses</h5>
+                <div class="d-flex ps-5">
+                    <div class="text-right input-text">
+                        <p>Food : </p>
+                        <p>Rent : </p>
+                        <p>Clothes : </p>
+                    </div>
+                    <div class="input-field">
+                        <input class="bg-secondary bg-opacity-25 m-2" type="text">
+                        <input class="bg-secondary bg-opacity-25 m-2" type="text">
+                        <input class="bg-secondary bg-opacity-25 m-2" type="text">
+                    </div>
+                </div>
+                <div class="my-2">
+                    <button class="btn bg-success text-white text-bold px-5">Calculate</button>
+                </div>
+                <h5 class="my-2">Total Expense : 5500</h5>
+                <h5 class="my-2">Balance : 4500</h5>
+                <div class="d-flex save-section">
+                    <p>save: </p>
+                    <input class="save-input text-center ms-2 bg-secondary bg-opacity-25 h-100" type="text">
+                    <p class="px-3 mx-1 bg-secondary bg-opacity-25 h-100">%</p>
+                    <button class="btn bg-success text-white text-bold px-4 h-100 py-0">Save</button>
+                </div>
+                <h5 class="my-2">Saving Amount : 5500</h5>
+                <h5 class="mb-2">Remaining Balance : 5500</h5>
+            </div>
+        </section>
+    </main>
+
 
 
     <!-- custon javascript link  -->

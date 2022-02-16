@@ -1,0 +1,21 @@
+.income-section{
+    margin-left: 47px;
+}
+input{
+    height: 30px;
+    width: 140px;
+    border: none;
+}
+.save-input{
+    width: 100px;
+}
+.input-field{
+    width: 50%;
+}
+.input-text{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.save-section{
+    height: 30px;
+}
