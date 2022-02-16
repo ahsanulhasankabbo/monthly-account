@@ -1,13 +1,19 @@
-
+// get input number  
+function getInput(inutId){
+    const inputField = document.getElementById(inutId);
+    const inputCost = inputField.value; 
+    return inputCost;
+}
+function updateBalance(number1 , number2){
+    const sub = number1 - number2;
+    return sub;
+}
 // calculate button 
 document.getElementById("calculate-button").addEventListener("click",function(){
     // update expenses 
-    const foodInput = document.getElementById("food-input");
-    const foodCost = foodInput.value;
-    const rentInput = document.getElementById("rent-input");
-    const rentCost = rentInput.value;
-    const clothesInput = document.getElementById("clothes-input");
-    const clothesCost = clothesInput.value;
+    const foodCost = getInput("food-input");
+    const rentCost = getInput("rent-input");
+    const clothesCost = getInput("clothes-input");
     
     const totalCost = parseFloat(foodCost) + parseFloat(rentCost) + parseFloat(clothesCost);
     
@@ -15,23 +21,22 @@ document.getElementById("calculate-button").addEventListener("click",function(){
     totalCostInput.innerText = totalCost;
 
     // update balance 
-    const incomeInput = document.getElementById("income-input");
-    const incomeCost = incomeInput.value;
+    const incomeCost = getInput("income-input");
 
     const totalBalance = document.getElementById("total-balance");
     const totalBalanceSave = totalBalance.innerText;
-    const newBalance = incomeCost - totalCost;
+    // const newBalance = incomeCost - totalCost;
+    // totalBalance.innerText = newBalance;
+    const newBalance = updateBalance(incomeCost,totalCost);
     totalBalance.innerText = newBalance;
 })
 
 // save button 
 document.getElementById("save-button").addEventListener("click",function(){
     // update saving amount 
-    const saveInput = document.getElementById("save-input");
-    const saveNumverText = saveInput.value;
-    const saveNumver = parseFloat(saveNumverText);
-    const incomeInput = document.getElementById("income-input");
-    const incomeCost = incomeInput.value;
+    const saveCost = getInput("save-input");
+    const saveNumver = parseFloat(saveCost);
+    const incomeCost = getInput("income-input");
     
     const savingAmount = (saveNumver * incomeCost ) / 100 ;
 
@@ -46,6 +51,8 @@ document.getElementById("save-button").addEventListener("click",function(){
     const totalBalance = document.getElementById("total-balance");
     const totalBalanceSave = totalBalance.innerText;
     
-    const remainingAmount = totalBalanceSave - savingAmount;
+    // const remainingAmount = totalBalanceSave - savingAmount;
+    // remainingBalance.innerText = remainingAmount;
+    const remainingAmount = updateBalance(totalBalanceSave,savingAmount);
     remainingBalance.innerText = remainingAmount;
 })
