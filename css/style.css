@@ -1,6 +1,4 @@
-.income-section{
-    margin-left: 47px;
-}
+/* custom input  */
 input{
     height: 30px;
     width: 140px;
@@ -17,6 +15,8 @@ input{
     margin-top: 10px;
     font-size: 18px;
 }
+
+/* custom save input field  */
 .save-section{
     height: 30px;
 }
